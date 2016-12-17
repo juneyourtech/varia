@@ -1,0 +1,5 @@
+@-moz-document domain('postimees.ee') {
+
+@screen and (max-width:730px) {DIV.article figure.image IMG {width:100%;}}
+
+}
