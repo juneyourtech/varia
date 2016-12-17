@@ -1,5 +1,5 @@
-@-moz-document domain('postimees.ee') {
+@-moz-document domain('pinknews.co.uk') {
 
-@screen and (max-width:730px) {DIV.article figure.image IMG {width:100%;}}
+@media only screen and (max-width:730px) {DIV.article figure.image IMG {width:100%;}}
 
 }
