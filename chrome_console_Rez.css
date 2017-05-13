@@ -1,7 +1,7 @@
 @-moz-document regexp('chrome://global/content/console\.xul') {
 
-.console-row-file {overflow-x:auto; height:3em;}
+.console-row-file {overflow-x:auto; overflow-y:hidden; height:3em;}
 
-.console-row-code {overflow-x:auto; height:3em;}
+.console-row-code {overflow-x:auto; overflow-y:hidden; height:3em;}
 
 }
