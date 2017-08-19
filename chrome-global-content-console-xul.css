@@ -7,7 +7,7 @@ box.console-row .console-row-content {overflow-x:auto;} /* works */
 box.console-row[type='warning'] .console-row-content {min-height:94px}
 box.console-row[type='error'] .console-row-content {min-height:72px}
 
-box.console-row[type='error'] .console-error-msg, .console-row-msg {font-size:100%;}
+box.console-row[type='error'] .console-error-msg, box.console-row .console-row-msg {font-size:100%;}
 
 .console-code {overflow-x:auto; min-height:16px;}
 
