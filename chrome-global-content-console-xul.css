@@ -1,6 +1,6 @@
 @-moz-document regexp('chrome://global/content/console\\.xul') {
 
-/* box.console-row {overflow-x:auto; min-height:103px;}*/  /* works */
+box.console-row {overflow-x:auto; min-height:103px;}  /* works */
   
 box.console-row .console-row-content {overflow-x:auto;} /* works */
   
