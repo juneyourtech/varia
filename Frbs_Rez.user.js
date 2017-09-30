@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name        Frbs Rez
 // @namespace   frbs_rez
-// @description Forbes font size and minor layout adjustments for 1024x768 screens. Concerns older Gecko-based browsers (Firefox 38.8esr and such). This userscript/userstyle is meant to slightly improve the layout and legibility of the Forbes website, and is not in any way associated with Forbes. Forbes is the trademark — registered or otherwise — of Forbes Media LLC.
+// @description Forbes font size and minor layout adjustments for 1024x768 screens. Concerns older Gecko-based browsers (Firefox 38.8esr and such). This userscript/userstyle is meant to slightly improve the layout and legibility of the Forbes website, and is not in any way associated with Forbes. Forbes is the registered of Forbes Media LLC.
 // @author        JuneYourTech | github.com/juneyourtech
 // @updateURL     https://raw.githubusercontent.com/juneyourtech/varia/master/Frbs_Rez.user.js
 // @encoding      utf-8
