@@ -8,7 +8,7 @@
 // @homepage      https://github.com/juneyourtech/varia
 // @supportURL    https://github.com/juneyourtech/varia/issues
 // @include     *.forbes.com/*
-// @version     0.1.0
+// @version     0.1.1
 // @grant       GM_addStyle
 // ==/UserScript==
 /* ____80_character_separator________________________________________________ */
@@ -45,17 +45,22 @@ GM_addStyle("ARTICLE-BODY-CONTAINER.article-body.fs-responsive-text P {font-size
 
    • Some things still need improvements, as they adversely affect font rendering on Windows xp. */
 
-GM_addStyle(" *[_nghost-c35] {width:100%; height:100%; overflow-x:scroll; overflow-y:hidden;}");
+GM_addStyle(" *[_nghost-c35], *[_nghost-c36] {width:100%; height:100%; overflow-x:scroll; overflow-y:hidden;}");
+/* 27.10.2017: +c36 */
 
-GM_addStyle("DIV[_nghost-c35] > FBS-CAROUSEL[_ngcontent-c35] {height:340px;  width:-moz-max-content; padding:0px; background:linear-gradient(to left, #404040 0%, #404040 342px, white 342px, white 100%);}");
+GM_addStyle("DIV[_nghost-c35] > FBS-CAROUSEL[_ngcontent-c35], DIV[_nghost-c36] > fbs-carousel[_ngcontent-c36] {height:340px; width:-moz-max-content; padding:0px; background:linear-gradient(to left, #404040 0%, #404040 342px, white 342px, white 100%);}");
 /* position:relative;
 -moz-max-content is for Firefox 38.8esr and older
-at some point, there was a single background-color:#404040; */
+at some point, there was a single background-color:#404040; 
+27.10.2017: +c36 */
 
-GM_addStyle("DIV.vp-box[_ngcontent-c35] {opacity:1.0; will-change:unset; width:340px; position:relative; float:left; display:block; margin:0px; margin-right:1px;}");
+GM_addStyle("DIV.vp-box[_ngcontent-c35], DIV.vp-box[_ngcontent-c36] {opacity:1.0; will-change:unset; width:340px; position:relative; float:left; display:block; margin:0px; margin-right:1px;}");
 /* border-right:solid 1px white; shows, but does not work, as it evokes a 
 bottom border. Caveat: Using linear-gradient in the parent element 
-causes font rendering to become bad (Ff v38-39, WinXP). Fortunately, link titles are short, and not the kind of long text that would require long-form reading. */
+causes font rendering to become bad (Ff v38-39, WinXP). 
+Fortunately, link titles are short, and not the kind of long text 
+that would require long-form reading. 
+27.10.2017: +c36 */
 
 GM_addStyle("A.thumb.hasimage[_ngcontent-c36] {background-color:none; cursor:pointer;}");
 
