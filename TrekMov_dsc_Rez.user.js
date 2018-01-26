@@ -2,7 +2,7 @@
 // @name        TrekMovie/DSC
 // @namespace   TrekMov_dsc_Rez
 // @description Enhances visibility and explanation of the TrekMovie comments loader. Small font fixes. (All trademarks are belong to their respective owners.)
-// @updateURL   https://github.com/juneyourtech/varia/master/TrekMov_dsc_Rez.user.js
+// @updateURL   https://github.com/juneyourtech/varia/raw/master/TrekMov_dsc_Rez.user.js
 // @include     https://trekmovie.com/*
 // @version     0.1.1
 // @grant       GM_addStyle
