@@ -1,0 +1,152 @@
+/* ==UserStyle==
+@name           Wapo Rez
+@namespace      github.com/openstyles/stylus
+@version        0.1.0
+@description    Wapo format changes for Stylus
+@author         @JuneYourTech
+==/UserStyle== */
+
+@-moz-document domain("washingtonpost.com") {
+    
+/* anti-adblock msg */
+HTML {overflow:auto !important;}
+/* 18.05.2018 */
+
+HTML.article > BODY, HTML.layout_article > BODY {overflow-y:auto !important;}
+
+/* SIGN-IN OVERLAY */
+DIV.wp_signin, DIV.wp_signin > IFRAME {position:absolute !important; left:unset !important; right:0px !important; height:217px !important; width:376px !important;}
+/* height:73px !important; */
+
+DIV.wp_signin {position:absolute !important;}
+
+DIV#wp_Signin.simple-overlay {position:absolute; bottom:unset; left:unset; right:0px; width:375px; background-color:rgba(25, 85, 165,0.25);}
+
+/* GM_addStyle("DIV#wp_Signin {height:73px;}") */
+
+/* adblock overlay */
+DIV.pb-f-page-adblocker-feature {z-index:1;}
+DIV#pb-root .pb-feature.pb-f-page-adblocker-feature {position:absolute; width:31%; height:214px; right:0px; float:unset; top:60px;}
+/* 1860px */
+
+DIV.pb-f-page-adblocker-feature > DIV.adblocker-root {height:100%;}
+
+/* adblock overlay: with translucent background */
+DIV.pb-f-page-adblocker-feature .modal-mask {position:relative; left:unset; width:100%; height:100%; display:block; z-index:0;}
+/* 18.05.2018 | relative borks the view */
+/* top:60px; right:0px; */
+/* 22.06.2018: Height follows one rule above. Was: 260px. */
+
+/* GM_addStyle("DIV.pb-f-page-adblocker-feature:hover .modal-mask {position:relative;}"); */
+/* 18.05.2018 */
+
+DIV.pb-f-page-adblocker-feature .modal-wrapper {height:100%;}
+
+/* adblock overlay: with blue background */
+DIV.pb-f-page-adblocker-feature .modal {display:inline; position:relative; left:unset; padding-right:0px; margin:10px; width:auto; height:calc(100% - 20px); overflow-y:auto; margin-right:1px; max-width:unset;}
+/* 18.05.2018 */
+/* blue part | 22.05.2018: Height: was: 240px; changed to calc. */
+
+/* adblock overlay: WaPo text / sign-in */
+DIV.pb-f-page-adblocker-feature .adblocker-sign-in {max-width:unset; width:100%; padding-top:8px; margin-left:0px; padding-left:7px;}
+/* 22.06.2018 */
+
+/* adblock overlay: WaPo logo */
+DIV.pb-f-page-adblocker-feature .adblocker-sign-in .col-xs-2 {width:159px; padding:0px; min-height:26px;}
+/* width was initially modified to auto; | 22.06.2018 */
+
+/* adblock overlay: actual img */
+DIV.pb-f-page-adblocker-feature IMG {margin-top:0px;}
+/* 22.06.2018 */
+
+/* adblock overlay: "subscriber sign-in" */
+DIV.pb-f-page-adblocker-feature .adblocker-sign-in .col-xs-10 {width:auto; float:right; padding-top:4px; padding-right:7px;}
+/* 22.06.2018 */
+
+/* adblock overlay: Actual sign-in link */
+DIV.pb-f-page-adblocker-feature .adblocker-sign-in A {font-size:11px;}
+/* 22.06.2018 */
+
+/* adblock overlay: header "We noticed" */
+DIV.pb-f-page-adblocker-feature .adblocker-header {padding-left:7px !important; padding-right:7px !important;}
+/* !important is also in the original code | 22.06.2018 */
+
+/* adblock overlay: header */
+DIV.pb-f-page-adblocker-feature H3 {padding-top:12px; padding-bottom:0px; font-size:21px; line-height:25px;}
+/* 22.06.2018 */
+
+/* adblock overlay: subheader text: "Keep..." */
+DIV.pb-f-page-adblocker-feature .adblocker-body {padding-left:7px !important; padding-right:7px !important;}
+/* !important is also in the original code | 22.06.2018 */
+
+/* adblock overlay: subheader text properties */
+DIV.pb-f-page-adblocker-feature .adblocker-subheader {font-size:13px; line-height:1.6em; margin-bottom:5px;}
+/* 22.06.2018 */
+
+/* adblock overlay: font */
+DIV.pb-f-page-adblocker-feature .font-light {font-family:'Arial','Helvetica','Helvetica Neue','Helvetica Neue Light','Helv','Lucida Grande','sans-serif';}
+/* 22.06.2018 */
+
+/* LEFT ACTION AND SHARE ITEMS */
+DIV.top-sharebar-wrapper {background-color:transparent;}
+/* 22.06.2018 */
+
+/* This fixes many things */
+SECTION.col-xs-1, SECTION.col-sm-1, SECTION.col-md-1, SECTION.col-lg-1, SECTION.col-xl-1, SECTION.col-xs-2, SECTION.col-sm-2, SECTION.col-md-2, SECTION.col-lg-2, SECTION.col-xl-2, SECTION.col-xs-3, SECTION.col-sm-3, SECTION.col-md-3, SECTION.col-lg-3, SECTION.col-xl-3, SECTION.col-xs-4, SECTION.col-sm-4, SECTION.col-md-4, SECTION.col-lg-4, SECTION.col-xl-4, SECTION.col-xs-5, SECTION.col-sm-5, SECTION.col-md-5, SECTION.col-lg-5, SECTION.col-xl-5, SECTION.col-xs-6, SECTION.col-sm-6, SECTION.col-md-6, SECTION.col-lg-6, SECTION.col-xl-6, SECTION.col-xs-7, SECTION.col-sm-7, SECTION.col-md-7, SECTION.col-lg-7, SECTION.col-xl-7, SECTION.col-xs-8, SECTION.col-sm-8, SECTION.col-md-8, SECTION.col-lg-8, SECTION.col-xl-8, SECTION.col-xs-9, SECTION.col-sm-9, SECTION.col-md-9, SECTION.col-lg-9, SECTION.col-xl-9, SECTION.col-xs-10, SECTION.col-sm-10, SECTION.col-md-10, SECTION.col-lg-10, SECTION.col-xl-10, SECTION.col-xs-11, SECTION.col-sm-11, SECTION.col-md-11, SECTION.col-lg-11, SECTION.col-sm-12, SECTION.col-md-12, SECTION.col-lg-12, SECTION.col-xl-12, SECTION.col-xs-12, SECTION.col-xs-12.layout {position:initial;}
+
+/* HOMEPAGE: ARTICLE TITLES */
+DIV.flex-item .headline.normal-style {font-style:oblique;}
+/* ^ The intent is to improve legibility in Windows XP. */
+/* Original font-face: "PostoniWide",Georgia,serif */
+
+/* ARTICLES: ARTICLE TITLES */
+HTML.layout_article #top-content {padding-right:calc(100% - 73%);}
+DIV.col-sm-8#topper-headline-wrapper {width:100%;}
+
+/* DRAWBRIDGE */
+DIV.Mask__root___3G-KU {display:none;}
+
+HTML.drawbridge-up, HTML.drawbridge-up #pb-root, HTML.drawbridge-up BODY {overflow-x:unset !important; overflow-y:unset !important; height:unset !important; width:unset !important;}
+
+/* TEXT-SHADOW FIX */
+DIV.pb-f-article-article-body .article-body, DIV.pb-f-article-ans-article-body .article-body {color:black; text-shadow:none;}
+/* works. */
+/* 12.10.2017: Added second selector */
+
+DIV.pb-f-article-article-body P {font-size:100%;}
+
+/* ARTICLE MAIN TEXT */
+HTML.layout_article .pb-f-article-article-body.full ARTICLE > P {font-size:13px;}
+/* font-size option: 110% */
+
+/* ARTICLE MAIN TEXT */
+@media only screen { DIV#article-body ARTICLE > P {font-size:16px; line-height:1.6em;} }
+
+/* ARTICLE MAIN TEXT */
+@media only screen and (max-width: 1220px) {HTML.layout_article .pb-f-article-ans-article-body.full article > P {font-size:13px;} }
+
+@media only screen and (max-width: 1440px) {HTML.layout_article .pb-f-article-article-body P > A {font-size:13px;} }
+
+/* BLOCKQUOTE, QUOTED TEXT */
+@media only screen and (max-width: 1440px) {HTML.layout_article .pb-f-article-article-body.full ARTICLE > BLOCKQUOTE > P {font-size:14px;} }
+
+/* BLOCKQUOTE, QUOTED TEXT */
+@media only screen and (max-width: 1220px) {HTML.layout_article .pb-f-article-article-body.full ARTICLE > BLOCKQUOTE > P {font-size:15px;} }
+
+/* SIGNUP button */
+DIV.pb-f-page-newsletter-inLine .container {min-height:unset; padding-top:0px;}
+
+
+DIV.pb-f-page-newsletter-inLine .signup-module {min-height:unset;}
+
+DIV.pb-f-page-newsletter-inLine .sign-up-btn {margin-top:6px; margin-bottom:6px; height:22px; opacity:0.16;}
+
+DIV.pb-f-page-newsletter-inLine .signup-module:hover .sign-up-btn {opacity:1.00;}
+
+/* COMMENTS */
+DIV.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-body .echo-streamserver-controls-stream-item-text {font-family:'Arial','FranklinITCProLight','Helvetica-light','Helvetica','sans-serif'; font-size:90%;}
+/* font-size:13px; seems to work. */
+/* DIV.echo_container, SPAN.echo-streamserver-controls-stream-item-text */
+/* FranklinITCProLight,Helvetica-light,Helvetica,Arial,sans-serif */
+    
+}
