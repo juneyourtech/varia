@@ -1,24 +1,28 @@
 @-moz-document domain('www.yahoo.com') {
+  
+/* All of the code is still in a terrible pre-alpha state.
+
+   For this reason alone, I've cmmented out atomic rulesets, as they all apply to a very large number of elements, which makes it tricky in applying them to specific elements. */
 
 /* Top story [comment block] */
-HTML#atomic DIV.Px\(20px\) {padding:0px; padding-top:1px; padding-left:1px;}
+/* HTML#atomic DIV.Px\(20px\) {padding:0px; padding-top:1px; padding-left:1px;} */
 HTML#atomic LI.ntk-item DIV.H\(32px\) {height:52px;}
 
 /* Top story COMMENTER user picture */
 HTML#atomic A.js-content-viewer IMG.Va\(m\) {padding-top:1px;}
 
 /* Top story COMMENTER COMMENT */
-HTML#atomic SPAN.Pstart\(12px\) {padding-left:4px;}
+/* HTML#atomic SPAN.Pstart\(12px\) {padding-left:4px;} */
 
 /* mostly main container of news itmes. */
-@keyframes show-user-intent-toggle-right {0% {transform:none !important;} 45%, 75% {transform:none !important;} 100% {transform:none !important;} }
+/* @keyframes show-user-intent-toggle-right {0% {transform:none !important;} 45%, 75% {transform:none !important;} 100% {transform:none !important;} } */
 /* This also applies. */
 
 DIV.fp-item-card {padding-left:6px;}
 
 .user-intent.stream-item-card-sel {max-height:auto !important; transition:none !important;}
 LI.user-intent.stream-item {max-height:unset; transition:none; margin-top:10px; margin-bottom:0px;}
-HTML#atomic LI.Mend\(-20px\) {margin-right:-17px;}
+HTML#atomic LI.Mend\(-20px\) {margin-right:-18px;}
 .Ell, .Hidden {overflow:visible !important;}
 HTML#atomic LI.Ov\(h\) {overflow:visible; clear:both;}
 
