@@ -1,0 +1,45 @@
+@-moz-document domain('www.yahoo.com') {
+
+/* Top story [comment block] */
+HTML#atomic DIV.Px\(20px\) {padding:0px; padding-top:1px; padding-left:1px;}
+HTML#atomic LI.ntk-item DIV.H\(32px\) {height:52px;}
+
+/* Top story COMMENTER user picture */
+HTML#atomic A.js-content-viewer IMG.Va\(m\) {padding-top:1px;}
+
+/* Top story COMMENTER COMMENT */
+HTML#atomic SPAN.Pstart\(12px\) {padding-left:4px;}
+
+/* mostly main container of news itmes. */
+@keyframes show-user-intent-toggle-right {0% {transform:none !important;} 45%, 75% {transform:none !important;} 100% {transform:none !important;} }
+/* This also applies. */
+
+DIV.fp-item-card {padding-left:6px;}
+
+.user-intent.stream-item-card-sel {max-height:auto !important; transition:none !important;}
+LI.user-intent.stream-item {max-height:unset; transition:none; margin-top:10px; margin-bottom:0px;}
+HTML#atomic LI.Mend\(-20px\) {margin-right:-17px;}
+.Ell, .Hidden {overflow:visible !important;}
+HTML#atomic LI.Ov\(h\) {overflow:visible; clear:both;}
+
+DIV.user-intent-discoverability {animation:none; will-change:none;}
+HTML#atomic .Trsdu\(\.3s\) {transition:none;}
+HTML#atomic .Trstf\(eo\) {transition:none;}
+
+/* HTML#atomic DIV.Mih\(103px\) {} */
+
+/* Remove animations from animated placeholders */
+.ntktdv2 .ntk-item-placeholder {animation:none !important;}
+DIV.fp-pholder-bg {animation:none;}
+
+/* Show full titles: */
+HTML#atomic .Ov\(h\), .Ell, .Hidden, [class*="LineClamp"] {overflow:visible !important;}
+H3[class*="LineClamp"] {overflow:visible;}
+
+/* Prevent title overflowing intot news source */
+H3.LineClamp\(3\,4em\) {max-height:auto;} /* was: 4em;*/
+
+/* news source */
+P.Ell {text-overflow:unset}
+
+}
