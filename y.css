@@ -20,7 +20,8 @@ HTML#atomic A.js-content-viewer IMG.Va\(m\) {padding-top:1px;}
 
 DIV.fp-item-card {padding-left:6px;}
 
-.user-intent.stream-item-card-sel {max-height:auto !important; transition:none !important;}
+/* .user-intent.stream-item-card-sel {max-height:auto !important;} */
+.user-intent.stream-item-card-sel {transition:none !important;}
 LI.user-intent.stream-item {max-height:unset; transition:none; margin-top:10px; margin-bottom:0px;}
 HTML#atomic LI.Mend\(-20px\) {margin-right:-18px;}
 .Ell, .Hidden {overflow:visible !important;}
