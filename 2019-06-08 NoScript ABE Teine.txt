@@ -1,0 +1,161 @@
+#2ndrun 
+
+Site .2ndrun.tv/wp-content/plugins/disqus-comment-system/public/js/comment_count.js
+Deny INCLUSION
+
+Site .2ndrun.tv/wp-content/plugins/page-views-count/admin/assets/css/font-awesome.min.css
+Deny INCLUSION
+
+Site .2ndrun.tv/wp-content/plugins/rdv-youtube-playlist-video-player/packages/perfect-scrollbar/perfect-scrollbar.css
+Deny INCLUSION
+
+Site .2ndrun.tv/wp-content/plugins/rdv-youtube-playlist-video-player/packages/perfect-scrollbar/perfect-scrollbar.js
+Deny INCLUSION
+
+Site .2ndrun.tv/wp-content/plugins/rdv-youtube-playlist-video-player/packages/perfect-scrollbar/jquery.mousewheel.js
+Deny INCLUSION
+
+Site .2ndrun.tv/wp-content/plugins/rdv-youtube-playlist-video-player/packages/youtube-video-player/js/youtube-video-player.jquery.min.js
+Deny INCLUSION
+
+Site .2ndrun.tv/wp-content/plugins/rdv-youtube-playlist-video-player/js/plugin.js
+Deny INCLUSION
+
+Site .2ndrun.tv/wp-content/plugins/ticker-ultimate/assets/css/wptu-front.css
+Deny INCLUSION
+
+Site .2ndrun.tv/wp-content/plugins/ticker-ultimate/assets/js/wptu-public.js
+Deny INCLUSION
+
+Site .2ndrun.tv/wp-content/plugins/ticker-ultimate/assets/js/wptu-ticker.js
+Deny INCLUSION
+
+Site .2ndrun.tv/wp-content/plugins/wp-polls/polls-css.css
+Deny INCLUSION 
+#for
+#.2ndrun.tv/wp-content/plugins/wp-polls/polls-css.css?ver=2.73.8
+
+Site .2ndrun.tv/wp-content/plugins/wp-polls/polls-js.js
+Deny INCLUSION 
+#for
+#http://2ndrun.tv/wp-content/plugins/wp-polls/polls-js.js?ver=2.73.8
+
+Site .2ndrun.tv/wp-content/themes/mh_newsdesk/includes/font-awesome.min.css
+Deny INCLUSION
+
+Site .tunein.com
+Deny INCLUSION
+
+
+Site .disqus.com disqus.com
+Deny INCLUSION from .vjs.zencdn.net vjs.zencdn.net
+Deny INCLUSION from .2ndrun.tv 2ndrun.tv
+
+Site .cdn.rawgit.com/vaakash/jquery-easy-ticker/92e6e76c/jquery.easy-ticker.min.js
+Deny INCLUSION from .2ndrun.tv 2ndrun.tv
+
+Site .netdna.bootstrapcdn.com netdna.bootstrapcdn.com
+Deny INCLUSION from .2ndrun.tv 2ndrun.tv
+
+Site .cse.google.com cse.google.com
+Deny INCLUSION from .2ndrun.tv 2ndrun.tv
+
+Site .apis.google.com apis.google.com
+Accept INCLUSION from .news.google.com/news/feeds
+Deny INCLUSION(CSS,OBJ,MEDIA,FONT) from .news.google.com
+Deny INCLUSION from .news.google.com/articles*
+Deny INCLUSION from 2ndrun.tv .2ndrun.tv
+
+Site .fonts.googleapis.com fonts.googleapis.com
+Deny INCLUSION(FONT,CSS,IMAGE,OBJ,OBJSUB,MEDIA,PING,XBL,XHR,SUBDOC,DTD) from .news.google.com
+Deny INCLUSION from 2ndrun.tv .2ndrun.tv
+Deny INCLUSION from *.postimees.ee postimees.ee
+#For
+#PM:https://fonts.googleapis.com/css?family=Roboto:400,500,700
+
+Site .ocsp.pki.goog ocsp.pki.goog
+Deny INCLUSION from .2ndrun.tv 2ndrun.tv
+
+Site .www.google.com www.google.com
+Accept INCLUSION from .news.google.com/news/feeds
+Accept INCLUSION from .uk.godaddy.com uk.godaddy.com
+Deny INCLUSION(CSS,OBJ,MEDIA,FONT) from .news.google.com
+Deny INCLUSION from 2ndrun.tv .2ndrun.tv
+
+==G_stable==
+Site .accounts.google.*
+Accept INCLUSION from *.google.ee *.google.com
+Deny INCLUSION from .2ndrun.tv 2ndrun.tv
+
+==g_track==
+Site ^https://google-analytics.com/ga\.js
+Accept from ^https://google-analytics.com/ga\.js
+Accept from .google-analytics.com google-analytics.com
+Accept from ^https://www\.dailymail\.co\.uk/.*
+Accept from .www.dailymail.co.uk www.dailymail.co.uk
+Accept from .www.asus.com www.asus.com *.asus.com
+Accept INCLUSION from .www.asus.com www.asus.com *.asus.com
+Accept INCLUSION from ^https://google-analytics.com/ga\.js
+Accept INCLUSION from .google-analytics.com google-analytics.com
+Accept INCLUSION from ^https://www\.dailymail\.co\.uk/.*
+Accept INCLUSION from .www.dailymail.co.uk www.dailymail.co.uk
+Deny from .2ndrun.tv 2ndrun.tv
+Deny INCLUSION from .2ndrun.tv 2ndrun.tv
+Deny INCLUSION
+#26.04.2019: Daily Mail (temp/test)
+
+Site .www.googletagmanager.com www.googletagmanager.com
+Accept from .www.asus.com www.asus.com *.asus.com
+Accept INCLUSION from imgur.com
+Accept INCLUSION from .www.asus.com www.asus.com *.asus.com
+Accept INCLUSION from .www.washingtonpost.com www.washingtonpost.com
+Deny INCLUSION from .news.google.com
+Deny INCLUSION from 2ndrun.tv .2ndrun.tv
+Deny
+#06-2019 wapotest
+
+==YT==
+Site .www.youtube.com www.youtube.com .googlevideo.com .s.ytimg.com .ytimg.com ytimg.com
+Deny from ^https://news\.google\.com/articles/.*
+Deny INCLUSION from .news.google.com/articles*
+Deny INCLUSION from .news.google.com
+Deny INCLUSION from 2ndrun.tv .2ndrun.tv
+#Accept INCLUSION from .news.google.com/news/feeds
+#rem 23,12,2018
+
+==tw==
+Site .twitter.com twitter.com .api.twitter.com api.twitter.com .platform.twitter.com platform.twitter.com .publish.twitter.com publish.twitter.com .syndication.twitter.com syndication.twitter.com .ton.twitter.com ton.twitter.com .abs.twimg.com abs.twimg.com .cdn.syndication.twimg.com cdn.syndication.twimg.com
+Accept from .twitter.com twitter.com
+Accept from .api.twitter.com api.twitter.com
+Accept from .platform.twitter.com platform.twitter.com
+Accept from .publish.twitter.com publish.twitter.com
+Accept from .syndication.twitter.com .syndication.twitter.com
+Accept from .ton.twitter.com ton.twitter.com
+Accept from .cdn.syndication.twimg.com cdn.syndication.twimg.com
+Accept from .abs.twimg.com abs.twimg.com
+Accept INCLUSION from .twitter.com twitter.com
+Accept INCLUSION from .api.twitter.com api.twitter.com
+Accept INCLUSION from .platform.twitter.com platform.twitter.com
+Accept INCLUSION from .publish.twitter.com publish.twitter.com
+Accept INCLUSION from .syndication.twitter.com .syndication.twitter.com
+Accept INCLUSION from .ton.twitter.com ton.twitter.com
+Accept INCLUSION from .abs.twimg.com abs.twimg.com
+Accept INCLUSION from .cdn.syndication.twimg.com cdn.syndication.twimg.com
+Deny INCLUSION from .2ndrun.tv 2ndrun.tv
+Deny INCLUSION from .www.dailynk.com www.dailynk.com
+Deny INCLUSION from ^https?://epl\.delfi\.ee/.*&com=1$
+Deny INCLUSION from ^https?://.*\.postimees\.ee/.*/comments
+#Site [...] .twimg.com twimg.com
+
+
+==f==
+Site .facebook.com *.facebook.com *.facebook.net *.fbcdn.net
+Accept from .facebook.com *.facebook.com *.facebook.net *.fbcdn.net
+Accept INCLUSION from .facebook.com *.facebook.com *.facebook.net *.fbcdn.net
+Deny from .2ndrun.tv 2ndrun.tv
+Deny INCLUSION from .2ndrun.tv 2ndrun.tv
+Deny INCLUSION from ^https?://.*\.delfi\.ee/.*/.*/.*\&com\=1$
+Deny INCLUSION from ^https://.*\.postimees\.ee/([0-9]{1,7})/.*/comments$
+Deny
+#For:
+#https://kasulik.delfi.ee/news/uudised/petturid-tegutsemas-kui-sulle-helistab-see-number-siis-ara-telefoni-mitte-mingil-juhul-vastu-vota?id=85695101&com=1
