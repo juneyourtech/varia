@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<micromath xmlns:mmt="http://micromath.mkulesh.com">
+  <formulaList documentVersion="2" author="" title="" description="" textWidth="60" significantDigits="5" scale="0.47457" redefineAllowed="false">
+    <text_fragment>
+      <term key="text" text="Tip Calculator. License: GPL 3.0." />
+    </text_fragment>
+    <equation>
+      <term key="leftTerm" text="bill" />
+      <term key="rightTerm" text="111.00" />
+    </equation>
+    <equation>
+      <term key="leftTerm" text="tax" />
+      <term key="rightTerm" text="10" />
+    </equation>
+    <text_fragment inRightOfPrevious="true">
+      <term key="text" text="%;" />
+    </text_fragment>
+    <result inRightOfPrevious="true" disableCalculation="false" hideResultField="false" arrayLength="7">
+      <term key="leftTerm" text="taxAmount" />
+      <term key="rightTerm" text="" />
+    </result>
+    <result disableCalculation="false" hideResultField="false" arrayLength="7">
+      <term key="leftTerm" text="billAfterTax" />
+      <term key="rightTerm" text="" />
+    </result>
+    <equation>
+      <term key="leftTerm" text="tip" />
+      <term key="rightTerm" text="15" />
+    </equation>
+    <text_fragment inRightOfPrevious="true">
+      <term key="text" text="%" />
+    </text_fragment>
+    <result disableCalculation="false" hideResultField="false" arrayLength="7">
+      <term key="leftTerm" text="tipBeforeTax" />
+      <term key="rightTerm" text="" />
+    </result>
+    <result inRightOfPrevious="true" disableCalculation="false" hideResultField="false" arrayLength="7">
+      <term key="leftTerm" text="tipAfterTax" />
+      <term key="rightTerm" text="" />
+    </result>
+    <result disableCalculation="false" hideResultField="false" arrayLength="7">
+      <term key="leftTerm" text="totalBTIP" />
+      <term key="rightTerm" text="" />
+    </result>
+    <result inRightOfPrevious="true" disableCalculation="false" hideResultField="false" arrayLength="7">
+      <term key="leftTerm" text="totalAtip" />
+      <term key="rightTerm" text="" />
+    </result>
+    <equation>
+      <term key="leftTerm" text="people" />
+      <term key="rightTerm" text="3" />
+    </equation>
+    <result disableCalculation="false" hideResultField="false" arrayLength="7">
+      <term key="leftTerm" text="pplBTIP" />
+      <term key="rightTerm" text="" />
+    </result>
+    <result inRightOfPrevious="true" disableCalculation="false" hideResultField="false" arrayLength="7">
+      <term key="leftTerm" text="pplATIP" />
+      <term key="rightTerm" text="" />
+    </result>
+    <text_fragment>
+      <term key="text" text="" />
+    </text_fragment>
+    <text_fragment>
+      <term key="text" text="Logic —" />
+    </text_fragment>
+    <equation>
+      <term key="leftTerm" text="pplBTIP" />
+      <term key="rightTerm" code="divide_slash">
+        <term key="leftTerm" text="totalBTIP" />
+        <term key="rightTerm" text="people" />
+      </term>
+    </equation>
+    <equation>
+      <term key="leftTerm" text="pplATIP" />
+      <term key="rightTerm" code="divide_slash">
+        <term key="leftTerm" text="totalAtip" />
+        <term key="rightTerm" text="people" />
+      </term>
+    </equation>
+    <text_fragment>
+      <term key="text" text="" />
+    </text_fragment>
+    <equation>
+      <term key="leftTerm" text="totalBTIP" />
+      <term key="rightTerm" code="plus">
+        <term key="leftTerm" text="billAfterTax" />
+        <term key="rightTerm" text="tipBeforeTax" />
+      </term>
+    </equation>
+    <equation>
+      <term key="leftTerm" text="totalAtip" />
+      <term key="rightTerm" code="plus">
+        <term key="leftTerm" text="billAfterTax" />
+        <term key="rightTerm" text="tipAfterTax" />
+      </term>
+    </equation>
+    <text_fragment>
+      <term key="text" text="&#10;This tip is calculated from the subtotal:" />
+    </text_fragment>
+    <equation>
+      <term key="leftTerm" text="tipBeforeTax" />
+      <term key="rightTerm" code="perc">
+        <term key="argTerm1" text="bill" />
+        <term key="argTerm2" text="tip" />
+      </term>
+    </equation>
+    <text_fragment>
+      <term key="text" text="&#10;Tip calculated from bill+tax:" />
+    </text_fragment>
+    <equation>
+      <term key="leftTerm" text="tipAfterTax" />
+      <term key="rightTerm" code="perc">
+        <term key="argTerm1" text="billAfterTax" />
+        <term key="argTerm2" text="tip" />
+      </term>
+    </equation>
+    <text_fragment>
+      <term key="text" text="" />
+    </text_fragment>
+    <equation>
+      <term key="leftTerm" text="taxAmount" />
+      <term key="rightTerm" code="perc">
+        <term key="argTerm1" text="bill" />
+        <term key="argTerm2" text="tax" />
+      </term>
+    </equation>
+    <equation>
+      <term key="leftTerm" text="billAfterTax" />
+      <term key="rightTerm" code="plus">
+        <term key="leftTerm" text="bill" />
+        <term key="rightTerm" text="taxAmount" />
+      </term>
+    </equation>
+    <text_fragment>
+      <term key="text" text="&#10;Author: JuneYourTech&#10;https://github.com/juneyourtech/varia" />
+    </text_fragment>
+  </formulaList>
+</micromath>
