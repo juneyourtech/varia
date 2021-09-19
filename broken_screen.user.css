@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Broken screen Rez
 @namespace      github.com/openstyles/stylus
-@version        0.0.14
+@version        0.0.15
 @description    Adapt browser viewport for a broken screen
 @author         @JuneYourTech
 ==/UserStyle== */
@@ -18,7 +18,7 @@
 rem regexp('^(?!https?://(.*\\.)?(err|postimees|delfi)\\.ee).*$')
 removed to test if the following regexp ruleset works at all.
 */
-@-moz-document regexp('^(?!(chrome|file)://.*).*$'), regexp('^(?!https://(.*\\.)?err\\.ee).$') {
+@-moz-document regexp('^(?!(chrome|file)://.*).*$'), regexp('^(?!err\\.ee') {
 
 @media only screen and (max-width:320px) and (orientation:portrait) { 
 HTML, HTML > BODY {display:block; position:absolute; top:0px; left:0px; bottom:unset; width:240px; max-width:240px !important; height:247px; max-height:247px !important; overflow:auto !important;}  HTML {border-right:dotted 1px maroon; margin-top:0px; margin-left:0px; padding-top:0px; padding-left:0px;}  BODY {border-right:dotted 1px navy;}
