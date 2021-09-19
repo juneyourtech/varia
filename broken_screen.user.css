@@ -1,16 +1,26 @@
 /* ==UserStyle==
 @name           Broken screen Rez
 @namespace      github.com/openstyles/stylus
-@version        0.0.7
+@version        0.0.8
 @description    Adapt browser viewport for a broken screen
 @author         @JuneYourTech
 ==/UserStyle== */
 
+/* This ruleset is different, because it relies on the address bar sliding away when scrolling down (full-screen window).
+   It's important for longer pages that contain lists and articles. Additional domains can be added as and when needed, but must then be excluded via regular expressions in the second ruleset. */
+@-moz-document domain('err.ee'), domain('postimees.ee'), domain('delfi.ee'), domain('consent.google.com') {
+
+@media only screen and (max-width:320px) and (orientation:portrait) { HTML {margin-right:80px !important;}  HTML > BODY {padding-bottom:187px !important;} }
+}
+
+/* Portrait: This should exclude err and include most other sites, as they are more likely to have stubborn CSS. */
+@-moz-document regexp('^(?!chrome://.*).*$'), regexp('^(?!file://.*).*$'), regexp('(?!err\\.ee)'), regexp('(?!postimees\\.ee)'), regexp('(?!delfi\\.ee)') {
+
+@media only screen and (max-width:320px) and (orientation:portrait) { HTML, HTML > BODY {display:block; position:absolute; top:unset; left:0px; bottom:0px; width:240px; max-width:240px !important; height:247px; max-height:247px !important; overflow:auto !important; border-right:dotted 1px maroon;} }
+}
+
+/* Landscape: This applies to all domains in a stable manner. */
 @-moz-document regexp('^(?!chrome://.*).*$') {
 
-/* This ruleset is different, because it relies on the address bar sliding away when scrolling down (full-screen window). */   
-@media only screen and (max-width:320px) and (orientation:portrait) { HTML {margin-right:80px !important;}  HTML > BODY {padding-bottom:187px !important;} }
-
 @media only screen and (max-width:480px) and (max-height:320px) and (orientation:landscape) { HTML, HTML > BODY {display:block; position:absolute; top:unset; left:0px; bottom:0px; width:211px; max-width:211px !important; height:247px; max-height:247px !important; overflow:auto !important; border-right:dotted 1px maroon;} }
-
 }
