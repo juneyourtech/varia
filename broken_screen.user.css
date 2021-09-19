@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Broken screen Rez
 @namespace      github.com/openstyles/stylus
-@version        0.0.4
+@version        0.0.5
 @description    Adapt browser viewport for a broken screen
 @author         @JuneYourTech
 ==/UserStyle== */
@@ -11,6 +11,6 @@
 /* This ruleset is different, because it relies on the address bar sliding away when scrolling down (full-screen window). */   
 @media only screen and (max-width:320px) and (orientation:portrait) { HTML {margin-right:80px;}  HTML > BODY {padding-bottom:187px !important;} }
 
-@media only screen and (max-width:480px) and (max-height:320px) and (orientation:landscape) { HTML, HTML > BODY {display:block; position:absolute; top:unset; left:0px; bottom:0px; width:240px; height:240px; max-height:240px !important; overflow:auto !important; border-right:dotted 1px maroon;} }
+@media only screen and (max-width:480px) and (max-height:320px) and (orientation:landscape) { HTML, HTML > BODY {display:block; position:absolute; top:unset; left:0px; bottom:0px; width:211px; height:247px; max-height:247px !important; overflow:auto !important; border-right:dotted 1px maroon;} }
 
 }
