@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name           Broken screen Rez
+@namespace      github.com/openstyles/stylus
+@version        0.0.1
+@description    Adapt browser viewport for a broken screen
+@author         @JuneYourTech
+==/UserStyle== */
+
+@-moz-document regexp('^(?!chrome://.*).*$') {
+
+@media only screen and (max-width:320px) and (orientation:portrait) {
+
+HTML, HTML > BODY {width:240px; height:240px; max-height:240px !important; display:block; position:absolute; top:0px; left:0px; overflow:auto !important;}
+
+}
+
+@media only screen and (max-width:480px) and (orientation:landsacape) {
+
+HTML, HTML > BODY {width:240px; height:240px; max-height:240px !important; display:block; position:absolute; bottom:0px; left:0px; overflow:auto !important;}
+
+}
