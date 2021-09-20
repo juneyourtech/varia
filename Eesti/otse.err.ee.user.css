@@ -1,0 +1,80 @@
+@-moz-document domain("otse.err.ee") {
+/* old item color: #4C7990 */
+/* light blue color: #6FB2D8 */
+
+HTML *, HTML *:before, HTML *:after {animation:none; animation-delay:0s;}
+
+BODY {background-color:black;}
+
+/* main page title */
+
+SECTION.siteMenu {margin-bottom:3px; border-bottom:solid 1px #0C5B8A; background-color:black;}
+/* Original background color: #f6f6f6 */
+/* T., 31.08.2021: border-bottom was prevously set to #6FB2D8 */
+
+/* Hamburger menu button: */
+SECTION.siteMenu A, SECTION.siteMenu A:hover {background-color:#434343; color:#6FB2D8;}
+/* Original color: #333333; */
+
+/* Hamburger menu button container */
+SECTION.siteMenu A.site-menu-burger {width:46px; height:32px; padding:0px; text-align:center; line-height:1.1em;}
+
+/* Hamburger menu button lines */
+/* middle line */
+A.site-menu-burger SPAN {display:inline-block; transition:none; vertical-align:middle; line-height:1em; background:linear-gradient(to right, yellow 0px, #6FB2D8 50%, #6FB2D8 100%);}
+
+/* Hamburger menu button lines: top and bottom line, with :before and :after */
+A.site-menu-burger SPAN::before {display:block; position:absolute; top:-6px; left:0px; transition:none; background:linear-gradient(to right, red 0px, #6FB2D8 50%, #6FB2D8 100%);}
+A.site-menu-burger SPAN::after {display:block; position:absolute; top:6px; left:0px; transition:none; background:linear-gradient(to right, fuchsia 0px, #6FB2D8 50%, #6FB2D8 100%);}
+
+/* Hamburger menu content */
+DIV.site-menu-mobile-list, DIV.site-menu-mobile-list UL, DIV.site-menu-mobile-list.main-menu, DIV.site-menu-mobile-list.main-menu UL {background-color:#252525;}
+
+DIV.site-menu-mobile-list.main-menu > UL {border:solid 1px #f7f8f9;}
+
+/* Top: err logo link */
+@media only screen and (max-width:979px) { A.logo.external-link::after {opacity:1;} }
+/*  background-color:white; */
+
+/* @media only screen and (max-width:240px) { A.logo.external-link::after {opacity:0 !important;} } */
+
+DIV.menu-bar {color:#4C7990;}
+/* very dark blue: #043359 */
+
+/* NAIN page title ("Otse: SAATEKAVA") */
+DIV.siteName {padding-left:0px; padding-right:0px; line-height:1.1em;}
+
+@media only screen and (max-width:979px) { DIV.siteName {padding-left:0px; padding-right:0px;} }
+/* font-size:24px !important; font-size works here with !important. 
+border:solid 1px magenta; */
+
+@media only screen and (max-width:320px) { DIV.siteName {font-size:24px !important;} }
+
+/* columns */
+SECTION.otse-sections.schedule {background-color:black; padding-top:3px; border-radius:18px; border-color:transparent; border-image:linear-gradient(to bottom, #6FB2D8 0px, black 35%, black 75%, #6FB2D8 100%); border-image-slice:1;}
+/* border-top:#6FB2D8; border-bottom:#6FB2D8; */
+/* Turns out, that border-image does not apply for some reason, if border-image 
+is applied. 
+If in the same ruleset, if border-radius is specified before border-image, border-image won't be applied, and old/previous border properties are applied. */
+
+/* column titles */
+.schedule-extra-special, DIV.schedule-extra {background:linear-gradient(to right,black 0px, black 10%, #343434 35%, #343434 65%, black 100%);}
+/* bgcolor was previously set to #343434;. Use that later, when dealing with adjacent and other paddings. */
+
+/* column title hr */
+.otse-sections.schedule .schedule-notes HR, .schedule-extra-special HR, DIV.schedules HR {background-color:#6FB2D8;}
+/* original bg color: #eaeaea; */
+
+/* CHANNEL "underlines" */
+DIV.schedules HR {margin-top:2px; margin-left:0px; margin-right:0px; }
+
+/* Old programmes */
+DIV.schedule-item A, .schedule-notes {color:#C0C0C0;}
+
+/* Selected programme */
+DIV.schedule-item A:hover, DIV.schedule-item.playing-now A {color:black !important;}
+
+/* As-of-yet unviewed programmes */
+DIV.schedule-item.no-media A, SECTION.otse-sections.schedule .schedule-notes .no-media {color:#6FB2D8;}DIV.schedule-item.no-media A, SECTION.otse-sections.schedule .schedule-notes .no-media {color:#6FB2D8;}
+
+}
