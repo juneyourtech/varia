@@ -6,6 +6,10 @@ HTML *, HTML *:before, HTML *:after {animation:none; animation-delay:0s;}
 
 BODY {background-color:black;}
 
+/* COOKIE NOTIFICATION | E., 20.09.2021. */
+DIV.cookieOverlayText {display:inline-block; height:55px; width:100%; border-right:dotted 1px #fff; padding:0px; padding-bottom:1px; overflow-y:scroll; font-size:16px;} /* alt width: 230px; */
+DIV.cookie-overlay-btns {padding:0px;}
+
 /* main page title */
 
 SECTION.siteMenu {margin-bottom:3px; border-bottom:solid 1px #0C5B8A; background-color:black;}
