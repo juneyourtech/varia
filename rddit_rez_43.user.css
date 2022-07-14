@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name           old.reddit.com - 6/2/2022, 12:46:14 PM
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    For small and mobile screens.
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("old.reddit.com") {
+DIV.infobar-toaster-container {position:relative; display:inline-block;}
+
+/* SMALLER SCREEN SIZES | N., 14.07.2022.*/    
+HTML > BODY {min-width:720px;}
+HTML > body[class] > .content, HTML > body.listing-page[class] > .content {margin-left:0px;}
+}
