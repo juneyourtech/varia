@@ -2,14 +2,22 @@
 @name           old.reddit.com - 6/2/2022, 12:46:14 PM
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
-@description    For small and mobile screens.
+@description    For small and mobile screens on classic Firefox versions.
 @author         @juneyourtech
 ==/UserStyle== */
 
 @-moz-document domain("old.reddit.com") {
 DIV.infobar-toaster-container {position:relative; display:inline-block;}
 
-/* SMALLER SCREEN SIZES | N., 14.07.2022.*/    
-HTML > BODY {min-width:720px;}
+/* SMALLER SCREEN SIZES | N., 14.07.2022.*/
+HTML > BODY {min-width:720px; background-image:none; animation:none !important; transition:none !important;}
+/* HTML > BODY.loggedin::before, BODY.loggedin::after {} */
+
+/* The constantly-changing background image when logged in */
+DIV#header-bottom-right > form.logout [name="uh"] ~ a::before {animation:DIV#header-bottom-right > none !important; background:none; animation-delay:0s;}
+
+DIV#header-bottom-right > form [name="uh"][value^="q"] ~ a::after, DIV#header-bottom-right > form [name="uh"][value^="r"] ~ a::after, DIV#header-bottom-right > form [name="uh"][value^="s"] ~ a::after {background-image:unset;}
+
+/* Left-side content | N., 14.07.2022. */
 HTML > body[class] > .content, HTML > body.listing-page[class] > .content {margin-left:0px;}
 }
