@@ -27,5 +27,6 @@ HTML > body[class] > .content, HTML > body.listing-page[class] > .content {margi
 
 /* LINKS: Reddit domain | E., 18.07.2022. */
 DIV.link .domain A {transition:none !important;}
+DIV.link .title {font-size:unset;}
 SPAN.domain {font-size:unset;}
 }
