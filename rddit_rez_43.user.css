@@ -13,8 +13,8 @@ DIV.infobar-toaster-container {position:relative; display:inline-block;}
 HTML > BODY {min-width:720px; background-image:none; animation:none !important; transition:none !important;}
 /* HTML > BODY.loggedin::before, BODY.loggedin::after {} */
 
-/* The constantly-changing background image when logged in */
-DIV#header-bottom-right > form.logout [name="uh"] ~ a::before {animation:DIV#header-bottom-right > none !important; background:none; animation-delay:0s;}
+/* Remove the constantly-changing background image when logged in,  */
+DIV#header-bottom-right > form.logout [name="uh"] ~ a::before, DIV#header-bottom-right > none !important; {background:none; animation:none; animation-delay:0s;}
 
 DIV#header-bottom-right > form [name="uh"][value^="q"] ~ a::after, DIV#header-bottom-right > form [name="uh"][value^="r"] ~ a::after, DIV#header-bottom-right > form [name="uh"][value^="s"] ~ a::after {background-image:unset;}
 
