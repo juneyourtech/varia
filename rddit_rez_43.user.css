@@ -11,13 +11,21 @@ DIV.infobar-toaster-container {position:relative; display:inline-block;}
 
 /* SMALLER SCREEN SIZES | N., 14.07.2022.*/
 HTML > BODY {min-width:720px; background-image:none; animation:none !important; transition:none !important;}
-/* HTML > BODY.loggedin::before, BODY.loggedin::after {} */
+HTML > BODY:before, BODY:after, HTML > BODY.loggedin::before, BODY.loggedin::after {animation:none !important; animation-delay:0s; transition:none !important;}
 
-/* Remove the constantly-changing background image when logged in,  */
+/* Remove the constantly-changing background image when logged in. | 07.2022. */
 DIV#header-bottom-right > form.logout [name="uh"] ~ a::before, DIV#header-bottom-right > none !important; {background:none; animation:none; animation-delay:0s;}
 
+/* Remove the linear gradient | E., 18.07.2022. */
+HTML > body::after, DIV#header-bottom-right > form.logout [name="uh"] ~ a::before {background:none;}
+
+/* Remove the default 'new'/contemporary background image, whether logged in, or not. | 07.2022. */
 DIV#header-bottom-right > form [name="uh"][value^="q"] ~ a::after, DIV#header-bottom-right > form [name="uh"][value^="r"] ~ a::after, DIV#header-bottom-right > form [name="uh"][value^="s"] ~ a::after {background-image:unset;}
 
 /* Left-side content | N., 14.07.2022. */
 HTML > body[class] > .content, HTML > body.listing-page[class] > .content {margin-left:0px;}
+
+/* LINKS: Reddit domain | E., 18.07.2022. */
+DIV.link .domain A {transition:none !important;}
+SPAN.domain {font-size:unset;}
 }
